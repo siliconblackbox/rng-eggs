@@ -1,0 +1,48 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# --- KiCad ---
+*-backups/
+*.kicad_prl
+fp-info-cache
+*.lck
+_autosave-*
+*.bak
+
+# --- FPGA (Vivado / Quartus) ---
+.Xil/
+*.jou
+*.log
+*.str
+db/
+incremental_db/
+
+# --- Systèmes d'exploitation ---
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# --- Éditeurs ---
+.vscode/
+.idea/
+
+# --- Site web (sortie de compilation) ---
+site/dist/
+site/node_modules/
+site/.astro/
+
+# --- Données ---
+# Les données brutes SONT versionnées par défaut (traçabilité).
+# Fichiers volumineux (> ~50 Mo) : à passer sous Git LFS ou à archiver sur Zenodo.
+# Décommenter au besoin :
+# experiments/**/data/raw/*.bin
+# experiments/**/data/raw/*.tdms
+
+# --- Contenu tiers non redistribuable ---
+# Transcription intégrale d'une entrevue (droits de l'auteur) : conservée localement seulement
+docs/references/gcp_nelson_entrevue_2018/transcription.txt

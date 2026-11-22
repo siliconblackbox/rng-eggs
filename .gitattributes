@@ -1,0 +1,12 @@
+# Normalisation des fins de ligne
+* text=auto
+
+# Binaires
+*.pdf  binary
+*.png  binary
+*.jpg  binary
+*.jpeg binary
+*.bin  binary
+*.tdms binary
+*.h5   binary
+*.npy  binary
