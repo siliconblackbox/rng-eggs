@@ -46,3 +46,14 @@ firmware/      Code embarqué (à venir)
 journal/       Cahier de laboratoire daté
 media/         Photos et vidéos
 ```
+
+## Licences
+
+| Contenu | Licence |
+|---|---|
+| Code (`software/`, `firmware/`) | [MIT](LICENSE) |
+| Documents, rapports, figures, photos et données | [CC BY 4.0](LICENSE-docs.md) |
+| Matériel (schémas, PCB) | CERN-OHL-P v2 (à ajouter avec les premiers fichiers KiCad) |
+
+Les documents de tiers cités dans `docs/references/` (fiches techniques, publications)
+demeurent la propriété de leurs auteurs respectifs.
