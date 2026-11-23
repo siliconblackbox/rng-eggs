@@ -1,0 +1,8 @@
+# Environnement d'acquisition (Windows, Anaconda) — pip install -r requirements.txt
+pyvisa>=1.14
+pyvisa-py>=0.7
+psutil          # optionnel pour pyvisa-py (supprime un avertissement)
+zeroconf        # optionnel pour pyvisa-py (découverte HiSLIP/mDNS)
+pyyaml>=6
+numpy>=1.26
+nidaqmx>=1.0    # nécessite aussi le pilote NI-DAQmx installé sous Windows

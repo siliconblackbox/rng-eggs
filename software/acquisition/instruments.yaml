@@ -1,0 +1,34 @@
+# Instruments de banc — projet Conscience globale
+# Adresses IP fixes (réservations DHCP) à consigner ici ET dans docs/equipement_labo.md.
+#
+# protocole :
+#   INSTR  -> VXI-11, ressource VISA  TCPIP::<ip>::INSTR   (défaut)
+#   SOCKET -> socket brut SCPI,       TCPIP::<ip>::<port>::SOCKET
+# Si INSTR échoue, idn_check.py essaie automatiquement SOCKET sur le port indiqué.
+
+instruments:
+  oscilloscope:
+    modele: SDS1104X-E
+    ip: 192.168.1.50
+    protocole: INSTR
+    port: 5025
+  generateur:
+    modele: SDG1032X
+    ip: 192.168.1.52
+    protocole: INSTR
+    port: 5025
+  alimentation:
+    modele: SPD3303X-E
+    ip: 192.168.1.53
+    protocole: INSTR
+    port: 5025
+  multimetre:
+    modele: SDM3045X
+    ip: 192.168.1.51
+    protocole: INSTR
+    port: 5025
+
+daq:
+  usb6210:
+    modele: NI USB-6210
+    device: Dev1        # nom attribué dans NI MAX (à vérifier)

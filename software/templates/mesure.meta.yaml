@@ -1,0 +1,48 @@
+# Métadonnées d'une mesure — gabarit
+# Un fichier <nom_du_fichier_de_données>.meta.yaml accompagne chaque fichier brut.
+# Les champs marqués (auto) sont remplis par les scripts d'acquisition.
+schema_version: 1
+
+mesure:
+  fichier: ""                 # (auto) nom du fichier de données associé
+  sha256: ""                  # (auto) somme de contrôle du fichier de données
+  experience: ""              # ex. J1.1_source_avalanche
+  protocole_commit: ""        # hash du commit de gel du protocole
+  logiciel_commit: ""         # (auto) hash git du dépôt au moment de l'acquisition (+ "-dirty" si modifs)
+  type: mesure                # mesure | temoin | essai_preliminaire
+  essai: 1
+  operateur: Steve Beaulieu
+  debut: ""                   # (auto) ISO 8601 avec fuseau, ex. 2026-11-23T14:05:12-05:00
+  fin: ""                     # (auto)
+
+montage:
+  unite: ""                   # ex. RNG-01
+  schema: ""                  # ex. hardware/rng-01/schematics/RNG-01_breadboard_schema.pdf
+  configuration: {}           # ex. {source: A, R_bias: 100k, RV1: "mi-course", cavalier_B: 1}
+  point_de_mesure: ""         # ex. TP1
+
+alimentation:
+  instrument: ""              # ex. SPD3303X-E
+  consignes: {}               # ex. {CH1: {V: 12.00, I_lim: 0.050}, CH3: {V: 3.3}}
+  relevees: {}                # (auto si disponible) tensions et courants lus
+
+acquisition:
+  instrument: ""              # ex. NI USB-6210
+  idn: ""                     # (auto) réponse *IDN? ou numéro de série NI
+  canaux: []                  # ex. [ai0]
+  configuration_entree: ""    # ex. RSE | NRSE | DIFF
+  gamme_V: null               # ex. 0.2  (±0,2 V)
+  couplage: ""                # DC | AC
+  frequence_echantillonnage_Hz: null
+  nombre_echantillons: null
+  duree_s: null
+  format: ""                  # ex. npy float64, V
+  unites: V
+
+environnement:
+  temperature_C: null
+  humidite_pct: null
+  source_temperature: ""      # ex. manuelle, BME680
+  remarques: ""               # ex. chauffage en marche, porte fermée, éclairage LED éteint
+
+notes: ""
