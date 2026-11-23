@@ -1,0 +1,38 @@
+date: '2026-11-22T23:02:39-05:00'
+instruments:
+  oscilloscope:
+    modele_attendu: SDS1104X-E
+    ip: 192.168.1.50
+    ressource: TCPIP::192.168.1.50::INSTR
+    idn: Siglent Technologies,SDS1104X-E,SDSMMFCD5R9811,8.1.6.1.37R2
+    latence_ms: 8.4
+    fabricant: Siglent Technologies
+    modele: SDS1104X-E
+    numero_serie: SDSMMFCD5R9811
+    firmware: 8.1.6.1.37R2
+  generateur:
+    modele_attendu: SDG1032X
+    ip: 192.168.1.52
+    ressource: TCPIP::192.168.1.52::INSTR
+    idn: Siglent Technologies,SDG1032X,SDG1XCBD5R5645,1.01.01.33R1B6
+    latence_ms: 13.2
+    fabricant: Siglent Technologies
+    modele: SDG1032X
+    numero_serie: SDG1XCBD5R5645
+    firmware: 1.01.01.33R1B6
+  alimentation:
+    modele_attendu: SPD3303X-E
+    ip: 192.168.1.53
+    ressource: TCPIP::192.168.1.53::INSTR
+    idn: Siglent Technologies,SPD3303X-E,SPD3XIED5R8322,1.01.01.02.07R2,V3.0
+    latence_ms: 8.8
+  multimetre:
+    modele_attendu: SDM3045X
+    ip: 192.168.1.51
+    ressource: TCPIP::192.168.1.51::INSTR
+    idn: Siglent Technologies,SDM3045X,SDM34FBX5R1459,5.01.01.06R1
+    latence_ms: 23.4
+    fabricant: Siglent Technologies
+    modele: SDM3045X
+    numero_serie: SDM34FBX5R1459
+    firmware: 5.01.01.06R1

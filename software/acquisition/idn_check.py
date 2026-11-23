@@ -43,9 +43,11 @@ def interroger(nom: str, cfg: dict, rm) -> dict:
                 latence_ms=round((time.perf_counter() - t0) * 1000, 1),
             )
             champs = [c.strip() for c in idn.split(",")]
-            if len(champs) == 4:
+            if len(champs) >= 4:
                 resultat.update(fabricant=champs[0], modele=champs[1],
                                 numero_serie=champs[2], firmware=champs[3])
+            if len(champs) >= 5:  # ex. SPD3303X-E : 5e champ = version matérielle
+                resultat["materiel"] = ",".join(champs[4:])
             if cfg.get("modele") and cfg["modele"] not in idn:
                 resultat["avertissement"] = "modèle inattendu"
             return resultat
