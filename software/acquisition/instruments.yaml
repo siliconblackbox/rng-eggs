@@ -38,3 +38,9 @@ daq:
     # chargeur de micrologiciel (3923:7269), puis en NI USB-621x (3923:726f).
     # Une transmission par identifiant perd la carte après le chargement.
     etalonnage_externe: 2008-01-15   # échu ; voir docs/equipement_labo.md
+  ad2:
+    modele: Analog Discovery 2 NI Edition
+    numero_serie: 210321A298CE
+    poste: daq-win11            # VM 220, transmission USB par port host=3-9.3
+    usb_id: "0403:6014"         # FT232H
+    logiciel: WaveForms + WaveForms SDK (dwf)
