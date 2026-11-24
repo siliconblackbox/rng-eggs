@@ -31,4 +31,10 @@ instruments:
 daq:
   usb6210:
     modele: NI USB-6210
-    device: Dev1        # nom attribué dans NI MAX (à vérifier)
+    device: Dev1                # nom NI MAX (confirmé 2026-11-23)
+    numero_serie: 013271B1
+    poste: daq-win11            # VM 220 sur pve-bureau, 192.168.1.16
+    # Transmission USB par PORT (host=3-9.2) : la carte s'énumère d'abord en
+    # chargeur de micrologiciel (3923:7269), puis en NI USB-621x (3923:726f).
+    # Une transmission par identifiant perd la carte après le chargement.
+    etalonnage_externe: 2008-01-15   # échu ; voir docs/equipement_labo.md
